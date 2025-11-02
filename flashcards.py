@@ -10,32 +10,35 @@ Flashcard English Learner
 import os
 import random
 
+DATA_DIR = "data"
 WRONG_FILE = "wrong_words.txt"
 
 
-TOPICS = {
-    "uni_life": [
-        {"en": "lecture", "cn": "讲座"},
-        {"en": "tutorial", "cn": "辅导课/小班课"},
-        {"en": "assignment", "cn": "作业"},
-        {"en": "deadline", "cn": "截止日期"},
-        {"en": "campus", "cn": "校园"},
-    ],
-    "daily_talk": [
-        {"en": "top up", "cn": "充值"},
-        {"en": "catch up", "cn": "叙旧/聊聊"},
-        {"en": "no worries", "cn": "别担心/没事"},
-        {"en": "cheers", "cn": "谢谢/再见（口语）"},
-        {"en": "takeaway", "cn": "外卖"},
-    ],
-    "engineering": [
-        {"en": "resistor", "cn": "电阻"},
-        {"en": "voltage", "cn": "电压"},
-        {"en": "current", "cn": "电流"},
-        {"en": "circuit", "cn": "电路"},
-        {"en": "signal", "cn": "信号"},
-    ],
-}
+def load_all_topics(data_dir=DATA_DIR):
+    """from data load csv，return {topic_name: [ {en:.., cn:..}, ... ]}"""
+    topics = {}
+    if not os.path.exists(data_dir):
+        print(f"Data folder '{data_dir}' not found.")
+        return topics
+
+    for fname in os.listdir(data_dir):
+        if not fname.endswith(".csv"):
+            continue
+        topic_name = fname[:-4]  # 去掉 .csv
+        path = os.path.join(data_dir, fname)
+        words = []
+        with open(path, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                en = row.get("en", "").strip()
+                cn = row.get("cn", "").strip()
+                if en and cn:
+                    words.append({"en": en, "cn": cn})
+        if words:
+            topics[topic_name] = words
+    return topics
+
+
 
 
 def load_wrong_words(filename=WRONG_FILE):
