@@ -7,6 +7,7 @@ Flashcard English Learner
 - wrong answers go into wrong_words.txt
 """
 
+import csv
 import os
 import random
 
