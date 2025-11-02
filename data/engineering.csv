@@ -1,0 +1,101 @@
+en,cn
+electricity,电
+voltage,电压
+current,电流
+resistance,电阻
+power,功率
+energy,能量
+frequency,频率
+alternating current,交流电
+direct current,直流电
+circuit,电路
+series circuit,串联电路
+parallel circuit,并联电路
+Kirchhoff's law,基尔霍夫定律
+Ohm's law,欧姆定律
+capacitor,电容
+inductor,电感
+transformer,变压器
+diode,二极管
+rectifier,整流器
+transistor,晶体管
+BJT,双极型晶体管
+MOSFET,金属氧化物场效应管
+operational amplifier,运算放大器
+gain,增益
+filter,滤波器
+low-pass filter,低通滤波器
+high-pass filter,高通滤波器
+band-pass filter,带通滤波器
+signal,信号
+noise,噪声
+amplifier,放大器
+ADC,模数转换器
+DAC,数模转换器
+microcontroller,单片机/微控制器
+FPGA,现场可编程门阵列
+embedded system,嵌入式系统
+sensor,传感器
+actuator,执行器
+motor,电机
+DC motor,直流电机
+AC motor,交流电机
+three-phase,三相
+generator,发电机
+inverter,逆变器
+converter,变换器/转换器
+PWM,脉宽调制
+duty cycle,占空比
+power factor,功率因数
+impedance,阻抗
+reactance,电抗
+phasor,相量
+RMS value,有效值
+peak value,峰值
+oscilloscope,示波器
+multimeter,万用表
+breadboard,面包板
+soldering,焊接
+PCB,印制电路板
+ground,地/接地
+short circuit,短路
+open circuit,开路
+protection,保护
+fuse,保险丝
+circuit breaker,断路器
+relay,继电器
+contactor,接触器
+control system,控制系统
+feedback,反馈
+PID controller,PID控制器
+transfer function,传递函数
+Bode plot,波特图
+stability,稳定性
+bandwidth,带宽
+sampling,采样
+Nyquist rate,奈奎斯特速率
+digital signal processing,数字信号处理
+Fourier transform,傅里叶变换
+filter design,滤波器设计
+communication system,通信系统
+modulation,调制
+demodulation,解调
+antenna,天线
+wireless,无线
+Ethernet,以太网
+protocol,协议
+UART,串口UART
+I2C,I2C总线
+SPI,SPI总线
+battery,电池
+lithium-ion,锂离子
+charger,充电器
+efficiency,效率
+thermal management,热管理
+heatsink,散热片
+datasheet,数据手册
+safety standard,安全标准
+EMC,电磁兼容
+test bench,测试平台
+MATLAB,MATLAB软件
+Python,Python语言
