@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 """
 Flashcard English Learner
 - pick a topic
